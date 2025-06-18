@@ -20,6 +20,8 @@ import {
   X,
 } from "lucide-react";
 import me from "./assets/naim.jpg";
+import Typewriter from "typewriter-effect";
+import Tilt from "react-parallax-tilt";
 
 // Import Swiper styles and modules
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -466,9 +468,14 @@ const App: React.FC = () => {
           >
             <h1 className="text-5xl md:text-7xl font-bold text-gray-800 dark:text-white mb-6 animate-fade-in">
               Hi, I'm{" "}
-              <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-                Naim Nohan
-              </span>
+              <Typewriter
+                options={{
+                  strings: ["Naim Nohan", "a Software Engineer"],
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: "natural",
+                }}
+              />{" "}
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 animate-fade-in-delay">
               Full Stack Developer & UI/UX Enthusiast
@@ -516,17 +523,25 @@ const App: React.FC = () => {
               About Me
             </h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="flex justify-center">
-                <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center p-1">
-                  <div className="w-full h-full bg-white dark:bg-gray-700 rounded-full overflow-hidden">
-                    <img
-                      src={me}
-                      alt="Your Name"
-                      className="w-full h-full object-cover"
-                    />
+              <Tilt
+                tiltEnable={true}
+                tiltMaxAngleX={15}
+                tiltMaxAngleY={15}
+                scale={1.05}
+                transitionSpeed={1000}
+              >
+                <div className="flex justify-center">
+                  <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center p-1">
+                    <div className="w-full h-full bg-white dark:bg-gray-700 rounded-full overflow-hidden">
+                      <img
+                        src={me}
+                        alt="Your Name"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Tilt>
               <div>
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                   Software engineer by day, mountain conqueror by weekend (P.S.
