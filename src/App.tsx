@@ -23,11 +23,9 @@ import me from "./assets/naim.jpg";
 
 // Import Swiper styles and modules
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 interface Project {
   id: number;
@@ -650,7 +648,6 @@ const App: React.FC = () => {
                 spaceBetween={20}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
               >
                 {["frontend", "backend", "tools"].map((category) => (
                   <SwiperSlide key={category}>
@@ -700,7 +697,6 @@ const App: React.FC = () => {
                 spaceBetween={20}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
                 breakpoints={{
                   640: {
                     slidesPerView: 1.5,
@@ -746,7 +742,6 @@ const App: React.FC = () => {
                 spaceBetween={20}
                 slidesPerView={1}
                 pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
               >
                 {experiences.map((exp, index) => (
                   <SwiperSlide key={index}>
