@@ -1,38 +1,25 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
-    branches: [ master ]  # Trigger on pushes to master/main
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
+    branches: [ master ]
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build project
-        run: npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Install and build
+        run: |
+          npm install
+          npm run build
+          ls -la dist/
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: 'dist/'  # Your built files (e.g., from `npm run build`)
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          keep_files: false
