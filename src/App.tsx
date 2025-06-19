@@ -27,9 +27,7 @@ import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 // Import Swiper styles and modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Scrollbar, A11y } from "swiper/modules";
-import 'swiper/swiper-bundle.css';
-
-
+import "swiper/swiper-bundle.css";
 
 interface Project {
   id: number;
