@@ -81,12 +81,12 @@ const App: React.FC = () => {
     {
       id: 2,
       title: "Portfolio",
-      description: "A simple portfolio",
+      description: "A simple portfolio to showcase my works, experiences and skills.",
       technologies: ["React", "Tailwind", "TypeScript"],
       githubUrl: "https://github.com/TengkuNaim/portfolio",
       liveUrl: "https://tengkunaim.github.io/portfolio/",
       image:
-        "https://plus.unsplash.com/premium_vector-1682307879109-5f57b872fed8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydGZvbGlvfGVufDB8fDB8fHww",
+        "https://plus.unsplash.com/premium_vector-1682298545718-d32ae0b5a44a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGZvbGlvfGVufDB8fDB8fHww",
       featured: false,
     },
   ];
