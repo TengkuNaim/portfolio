@@ -30,6 +30,7 @@ import { Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
 
+
 interface Project {
   id: number;
   title: string;
