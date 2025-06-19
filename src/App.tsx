@@ -78,6 +78,17 @@ const App: React.FC = () => {
         "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       featured: true,
     },
+    {
+      id: 2,
+      title: "Portfolio",
+      description: "A simple portfolio",
+      technologies: ["React", "Tailwind", "TypeScript"],
+      githubUrl: "https://github.com/TengkuNaim/portfolio",
+      liveUrl: "https://tengkunaim.github.io/portfolio/",
+      image:
+        "https://plus.unsplash.com/premium_vector-1682307879109-5f57b872fed8?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydGZvbGlvfGVufDB8fDB8fHww",
+      featured: false,
+    },
   ];
 
   const skills: Skill[] = [
