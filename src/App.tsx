@@ -91,6 +91,7 @@ const App: React.FC = () => {
     },
   ];
 
+  
   const skills: Skill[] = [
     { name: "React", level: 50, category: "frontend" },
     { name: "TypeScript", level: 70, category: "frontend" },
