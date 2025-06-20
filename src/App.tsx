@@ -68,7 +68,7 @@ const App: React.FC = () => {
     {
       id: 1,
       title: "Math Worksheet",
-      description: "A simple math worksheet based on www.mathinenglish.com.",
+      description: "A simple math worksheet based on www.mathinenglish.com",
       technologies: ["Vue", "Node.js", "Tailwind", "TypeScript"],
       githubUrl: "https://github.com/TengkuNaim/bridge-asia-math-worksheet",
       liveUrl: "https://tengkunaim.github.io/bridge-asia-math-worksheet/",
@@ -80,7 +80,7 @@ const App: React.FC = () => {
       id: 2,
       title: "Portfolio",
       description:
-        "A simple portfolio to showcase my works, experiences and skills.",
+        "A simple portfolio to showcase my works, experiences and skills",
       technologies: ["React", "Tailwind", "TypeScript"],
       githubUrl: "https://github.com/TengkuNaim/portfolio",
       liveUrl: "https://tengkunaim.github.io/portfolio/",
