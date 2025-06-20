@@ -29,8 +29,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Scrollbar, A11y } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
-
-
 interface Project {
   id: number;
   title: string;
@@ -81,7 +79,8 @@ const App: React.FC = () => {
     {
       id: 2,
       title: "Portfolio",
-      description: "A simple portfolio to showcase my works, experiences and skills.",
+      description:
+        "A simple portfolio to showcase my works, experiences and skills.",
       technologies: ["React", "Tailwind", "TypeScript"],
       githubUrl: "https://github.com/TengkuNaim/portfolio",
       liveUrl: "https://tengkunaim.github.io/portfolio/",
